@@ -1,0 +1,70 @@
+#IMAP/POP
+[29/May/2019:10:44:56 +0200] hosttr14 imapd[17849]: General Information: close [192.168.87.4:40581] jquiniou1 2019/5/29 10:01:41 0:06:36 12483 52510 1
+[29/May/2019:17:05:33 +0200] hosttr14 popd[17856]: Account Notice: close [192.168.87.6:44865] dpotvin 2019/5/29 17:05:25 0:00:08 80 38711 1
+[29/May/2019:10:44:56 +0200] hosttr14 imapd[17849]: General Information: Log created (1559119496)
+[29/May/2019:08:39:42 +0200] hosttr14 imapd[17849]: Account Notice: badlogin: [192.168.87.6:45711] plaintext mfichou1@my-domaine.fr Authentication failed
+[02/May/1998:17:37:32 -0700] showshoe cgi_store[18753]: General Notice: Log created (894155852)
+[04/May/1998:11:07:44 -0400] xyzmail cgi_service[343]: General Error: function=getserverhello|port=2500|error=failed to connect
+[03/Dec/1998:06:54:32 +0200] SiroePost imapd[232]: Account Notice: close [127.0.0.1] [unauthenticated] 1998/12/3 6:54:32 0:00:00 0 115 0
+[30/Aug/2004:16:53:31 -0700] vadar imapd[13027]: Account Notice: badlogin: [192.18.126.64:40720] plaintext user3 account disabled (hold)
+[30/Aug/2004:16:53:13 -0700] vadar imapd[13027]: Account Information: login [192.18.126.64:40718] user1 plaintext
+[31/Aug/2004:16:33:14 -0700] vadar ims_master[13822]: Store Information:append:user1:user/user1:659:<Roam.SIMC.2.0.6.1093995286.11265.user1@vadar.siroe.com>
+
+#MTA RECEIVING
+05-Jun-2019 13:51:20.61 > Received: from localhost (hostatv13.my-domaine.fr [127.0.0.1]) by hostatv13.my-domaine.fr (Postfix) with ESMTP id 832098480C;   Wed,  5 Jun 2019 13:51:20 +0200 (CEST)
+05-Jun-2019 13:51:21.01 > Received: from localhost (localhost [127.0.0.1])      by hostatv2.my-domaine.fr (Postfix) with ESMTP id DF8A7FFE3E;    Wed,  5 Jun 2019 13:51:20 +0200 (CEST)
+05-Jun-2019 13:51:21.62 > Received: from localhost (hostatv16.my-domaine.fr [127.0.0.1]) by hostatv16.my-domaine.fr (Postfix) with ESMTP id 79EDC1117AA;  Wed,  5 Jun 2019 13:51:21 +0200 (CEST)
+05-Jun-2019 13:51:23.48 > Received: from localhost (hostatv11.my-domaine.fr [127.0.0.1]) by hostatv11.my-domaine.fr (Postfix) with ESMTP id 6D80E87702    for <isabelle.letemplier@my-domaine.fr>; Wed,  5 Jun 2019 13:51:23 +0200 (CEST)
+05-Jun-2019 13:51:38.99 > Received: from localhost (localhost [127.0.0.1])      by smtps.my-domaine.fr (Postfix) with ESMTP id E970B1035C1       for <Soazig.Taxi@my-domaine.fr>; Wed,  5 Jun 2019 13:51:38 +0200 (CEST)
+05-Jun-2019 13:51:41.38 > Received: from localhost (localhost [127.0.0.1])      by hostatv5.my-domaine.fr (Postfix) with ESMTP id 467EB102C1F    for <sylvie.Tarzan@my-domaine.fr>; Wed,  5 Jun 2019 13:51:41 +0200 (CEST)
+05-Jun-2019 13:51:53.15 > Received: from localhost (localhost [127.0.0.1])      by smtps.my-domaine.fr (Postfix) with ESMTP id 0D3941035C1       for <water.Le-burnout@my-domaine.fr>; Wed,  5 Jun 2019 13:51:53 +0200 (CEST)
+05-Jun-2019 13:52:06.52 > Received: from localhost (localhost [127.0.0.1])      by hostatv5.my-domaine.fr (Postfix) with ESMTP id 1E26C102C1F    for <tugdual.claquage@my-domaine.fr>; Wed,  5 Jun 2019 13:52:06 +0200 (CEST)
+06-Jun-2019 09:58:11.66 > Received: from localhost (hostatv4.my-domaine.fr [127.0.0.1])  by hostatv4.my-domaine.fr (Postfix) with ESMTP id 7FF12876F0;    Thu,  6 Jun 2019 09:58:11 +0200 (CEST)
+06-Jun-2019 09:53:38.45 > Received: from hostatv5.my-domaine.fr ([195.221.67.126]) by hosttr14.in.my-domaine.fr (Oracle Communications Messaging Server 7u4-23.01(7.0.4.23.0) 64bit (built Aug 10 2011)) with ESMTP id <0PSO00NT139EXA50@hosttr14.in.my-domaine.fr> for Geremya.Girard@my-domaine.fr; Thu, 06 Jun 2019 09:53:38 +0200 (CEST)
+06-Jun-2019 09:54:06.02 > Received: from hostatv2.my-domaine.fr ([195.221.67.65]) by hosttr14.in.my-domaine.fr (Oracle Communications Messaging Server 7u4-23.01(7.0.4.23.0) 64bit (built Aug 10 2011)) with ESMTP id <0PSO00NTJ3A5XA50@hosttr14.in.my-domaine.fr>; Thu, 06 Jun 2019 09:54:05 +0200 (CEST)
+
+#MTA MESSAGEID
+06-Jun-2019 10:15:22.88 > Message-id: <98f7485b.AMIAAD5y_RIAAcepkBAAAI-RnjEAAAAAAAIAAAADAAJrugBc-MuW@mailjet.com>
+06-Jun-2019 07:19:34.64 > Message-id: <eaf1448972538972ba20f6247.85b57079a4.20190606051911.58c8d41554.1f4a2d89@mail146.sea81.mcsv.net>
+
+#MTA CONNEXION TRANSACTION
+06-Jun-2019 07:19:34.64 tcp_local    +            C TCP|172.29.208.120|25|195.221.67.144|49298 SMTP
+04-Sep-2002 01:00:04.23 host.domain.com 1f625.d.0 tcp_local    +            O TCP|129.153.12.42|25|123.4.5.67|65228 SMTP 
+04-Sep-2002 01:00:05.21 host.domain.com 1f625.d.3 tcp_local    +            C TCP|129.153.12.42|25|123.4.5.67|65228 SMTP/TLS-192-DES-CBC3-SHA 
+04-Sep-2002 01:00:06.23 host.domain.com 1f627.3.0 tcp_local    -            O TCP|129.153.12.42|4303|123.45.6.7|25 SMTP/domain.com/mail.domain.com 
+04-Sep-2002 01:00:06.49 host.domain.com 1f627.3.3 tcp_local    -            C TCP|129.153.12.42|4303|123.45.6.7|25 SMTP/domain.com/mail.domain.com/TLS-192-DES-CBC3-SHA
+
+#MTA MESSAGE TRANSACTION
+06-Jun-2019 07:19:34.70 ims-ms                    D 64 bounce-mc.us14_62873553.46511-vasquez.goascoz=my-domaine.fr@mail146.sea81.mcsv.net rfc822;vasquez.goascoz@my-domaine.fr pcozia@ims-ms-daemon mailsrv  
+06-Jun-2019 07:19:39.74 tcp_local    ims-ms       EEQ 4 Totem.matew@my-domaine.fr rfc822;Totem.matew@my-domaine.fr vrobin2@ims-ms-daemon mailsrv hostatv2.my-domaine.fr ([195.221.67.65]) 
+06-Jun-2019 07:19:39.76 ims-ms                    D 4 Totem.matew@my-domaine.fr rfc822;Totem.matew@my-domaine.fr vrobin2@ims-ms-daemon mailsrv  
+06-Jun-2019 07:19:41.50 tcp_local    tcp_local    EEQ 64 bounce-mc.us14_62873553.46511-water.gwened=my-domaine.fr@mail128.atl21.rsgsv.net rfc822;water.gwened@my-domaine.fr water.gwened@orange.fr mailsrv hostatv13.my-domaine.fr ([195.221.67.140]) 
+19-Jan-1998 13:13:27.10 hosta   2e2d.5.1 tcp_local   tcp_intranet E 1 service@innosoft.com rfc822;huber@domain.com huber 276 /opt/sun/comms/hostaging64/data/queue/tcp_intranet/ZZi0D4d9f5mwC.00 <01IWFVYLGTS499EC9W@innosoft.com> <01IWFVYLGTS499EC9Y@innosoft.com> mailsrv innosoft.com (innosoft.com [192.160.253.66]) 0 3
+
+
+
+
+
+07-Jun-2019 17:07:01.82 tcp_local                 DEQ 70 bounce@newsletters.lerobert.com rfc822;yasmina.Brune@my-domaine.fr yasminabrune@hotmail.com mailsrv hostatv9.my-domaine.fr dns;hostatv9.my-domaine.fr (TCP|172.29.208.120|39856|195.221.67.123|25) (hostatv9.my-domaine.fr ESMTP Postfix) smtp;250 2.1.5 Ok
+11-Jun-2019 09:33:28.00 tcp_intranet              Q 8  rfc822;root@hosttr1.in.my-domaine.fr @messmtadmz.my-domaine.fr:adminmtadmz@my-domaine.fr mailsrv  Too many failures to this host during this run; skipping this host: Dead (unresponsive) host
+
+
+[12/Jun/2019:02:00:02 +0200] hosttr14 imdbverify[1731]: Store Notice: Database snapshot finished, duration 3 seconds, destination /opt/sun/comms/messaging64/data/store/dbdata/snapshots/003/
+[11/Jun/2019:23:01:19 +0200] hosttr14 imexpire[24489]: General Notice: Expire finished
+[11/Jun/2019:15:15:01 +0200] hosttr14 msprobe[21616]: General Warning: alarmid=diskavail|instance=part143|time=11/Jun/2019:15:15:01 +0200|value=8|low=0|high=94|threshold(below)=10|count below threshold=14|warning sent=272
+[25/Feb/2012:09:55:57 +1100] hostname imapd[7264]: Store Critical: Unable to open mailbox user/username: Mailbox does not exist
+[25/Feb/2012:09:55:57 +1100] hostname imapd[7264]: Store Error: user/username: Mailbox has an invalid format; repair requested
+[24/Feb/2012:14:47:15 +1100] hostname impurge[17986]: General Error: Could not get purge session lock. Possibly another impurge is running
+[25/Feb/2012:09:55:58 +1100] hostname impurge[7263]: General Notice: repairing user/username
+
+
+#NOT MATCHED 
+##Error sur fromUser
+
+  
+##Error sur Appli Info
+##error 
+
+#MATCHED
+ 
+ 
