@@ -1,7 +1,7 @@
 # Sun Oracle servers logs parsing pipeline
 input {
   file {
-    path => "/var/log/maillog*"
+    path => "/var/log/log-oracle.log"
     start_position => "beginning"
     type => "sun-oracle"
   }
