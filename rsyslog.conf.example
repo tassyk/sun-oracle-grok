@@ -1,0 +1,80 @@
+# Use traditional timestamp format
+$ActionFileDefaultTemplate RSYSLOG_TraditionalFileFormat
+
+# Provides kernel logging support (previously done by rklogd)
+$ModLoad imklog
+# Provides support for local system logging (e.g. via logger command)
+$ModLoad imuxsock
+
+# Log all kernel messages to the console.
+# Logging much else clutters up the screen.
+#kern.*                                                 /dev/console
+
+
+#-------------------------------------------------------------------------------------------
+$ModLoad imfile # module qui permet de convertir tout fichier texte en flux de messages syslog
+
+# mail.log_current
+$InputFileName /opt/sun/comms/messaging64/log/mail.log_current
+$InputFileTag maillog:
+$InputFileStateFile maillog_filestate
+$InputFileFacility local4
+$InputRunFileMonitor  # active la surveillance de fichiers (sans ceci, le fichier texte sera ignoré)
+
+# imta
+$InputFileName /opt/sun/comms/messaging64/log/imta
+$InputFileTag imta:
+$InputFileStateFile imta_filestate
+$InputFileFacility local4
+$InputRunFileMonitor
+
+# http
+$InputFileName /opt/sun/comms/messaging64/log/pop
+$InputFileTag http:
+$InputFileStateFile http_filestate
+$InputFileFacility local4
+$InputRunFileMonitor
+
+# PopProxy
+$InputFileName /opt/sun/comms/messaging64/log/PopProxy
+$InputFileTag PopProxy:
+$InputFileStateFile popproxy_filestate
+$InputFileFacility local4
+$InputRunFileMonitor
+
+# PopProxy
+$InputFileName /opt/sun/comms/messaging64/log/ImapProxy
+$InputFileTag ImapProxy:
+$InputFileStateFile imapproxy_filestate
+$InputFileFacility local4
+$InputRunFileMonitor
+
+# envoi
+local4.*   @logstash-server:udp_port  # envoi vers le serveur distant en UDP
+
+local4.* ~ # Ne rien envoyer dans /var/log/messages
+
+#---------------------------------------------------------------------------------------------
+
+# Log anything (except mail) of level info or higher.
+# Don't log private authentication messages!
+*.info;mail.none;authpriv.none;cron.none                /var/log/messages
+
+# The authpriv file has restricted access.
+authpriv.*                                              /var/log/secure
+
+# Log all the mail messages in one place.
+mail.*                                                  -/var/log/maillog
+
+
+# Log cron stuff
+cron.*                                                  /var/log/cron
+
+# Everybody gets emergency messages
+*.emerg                                                 *
+
+# Save news errors of level crit and higher in a special file.
+uucp,news.crit                                          /var/log/spooler
+
+# Save boot messages also to boot.log
+local7.*                                                /var/log/boot.log
