@@ -1,0 +1,24 @@
+# Sun Oracle servers logs parsing pipeline
+input {
+  ...
+}
+
+filter {
+ if [type] == "sun-oracle" {
+   mutate {
+       gsub => [
+           "message","^<(\d*)>","",
+           "message", "[\r]", ""
+        ]
+   }
+   grok {
+       patterns_dir => ["/logstash/pattern/dir"]
+       patterns_files_glob => "sun-oracle.grok"
+       match => { "message" => "%{SUN}" }
+    }
+  }
+}
+
+output {
+  ...
+}

@@ -185,7 +185,8 @@ MTA (%{MTA_TRANSACTION_PREFIX})?\s*(?:%{MTA_TRANSACTION_CONNEXTION}|%{MTA_ENQUEU
 
 
 # -----------------------------------------------------------
-#All patterns
-SUN %{SYSLOG_ADDITIONAL_PREFIX} (?:%{IMAP}|%{MTA})
-# Adding fields after syslog configuration for oracle
+## Adding fields after syslog configuration for oracle
 SYSLOG_ADDITIONAL_PREFIX %{SYSLOGTIMESTAMP} %{HOSTNAME:loghost} %{WORD:logtype}:
+##All patterns
+SUN (?:%{IMAP}|%{MTA})
+#SUN %{SYSLOG_ADDITIONAL_PREFIX} (?:%{IMAP}|%{MTA})
